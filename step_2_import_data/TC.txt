@@ -1,2 +1,0 @@
- 1. Search query string and 
- 2. Results JSON. Search queries should demonstrate: retrieving correct data and fields from each of the data sources

@@ -1,0 +1,25 @@
+{
+    "@odata.context": "https://cognitivesearcganhptt6.search.windows.net/$metadata#indexers/$entity",
+    "@odata.etag": "\"0x8DBFEE44E8E02C0\"",
+    "name": "indexer1702805985954",
+    "description": null,
+    "dataSourceName": "coursesearch",
+    "skillsetName": "azureblob-skillset",
+    "targetIndexName": "azureblob-index",
+    "disabled": null,
+    "schedule": null,
+    "parameters": {
+      "batchSize": null,
+      "maxFailedItems": null,
+      "maxFailedItemsPerBatch": null,
+      "base64EncodeKeys": null,
+      "configuration": {
+        "pdfTextRotationAlgorithm": "none",
+        "imageAction": "none"
+      }
+    },
+    "fieldMappings": [],
+    "outputFieldMappings": [],
+    "cache": null,
+    "encryptionKey": null
+  }

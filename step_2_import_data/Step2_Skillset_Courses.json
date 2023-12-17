@@ -1,0 +1,24 @@
+{
+    "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+    "defaultLanguageCode": "",
+    "modelVersion": "",
+    "name": "",
+    "description": "",
+    "context": "",
+    "inputs": [
+      {
+        "name": "text",
+        "source": ""
+      },
+      {
+        "name": "languageCode",
+        "source": ""
+      }
+    ],
+    "outputs": [
+      {
+        "name": "keyPhrases",
+        "targetName": "keyPhrases"
+      }
+    ]
+  }
