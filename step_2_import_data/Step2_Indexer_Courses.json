@@ -1,25 +1,27 @@
 {
-    "@odata.context": "https://cognitivesearcganhptt6.search.windows.net/$metadata#indexers/$entity",
-    "@odata.etag": "\"0x8DBFEE44E8E02C0\"",
-    "name": "indexer1702805985954",
-    "description": null,
-    "dataSourceName": "coursesearch",
-    "skillsetName": "azureblob-skillset",
-    "targetIndexName": "azureblob-index",
-    "disabled": null,
-    "schedule": null,
-    "parameters": {
-      "batchSize": null,
-      "maxFailedItems": null,
-      "maxFailedItemsPerBatch": null,
-      "base64EncodeKeys": null,
-      "configuration": {
-        "pdfTextRotationAlgorithm": "none",
-        "imageAction": "none"
-      }
-    },
-    "fieldMappings": [],
-    "outputFieldMappings": [],
-    "cache": null,
-    "encryptionKey": null
-  }
+  "@odata.context": "https://cognitivesearcganhptt6.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DBFF8C7DB1F1B1\"",
+  "name": "azuretable-indexer",
+  "description": "",
+  "dataSourceName": "course",
+  "skillsetName": "azurecourse-skillset",
+  "targetIndexName": "azuretable-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": false,
+    "configuration": {}
+  },
+  "fieldMappings": [],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/PartitionKey/keyphrases",
+      "targetFieldName": "keyphrases"
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}
