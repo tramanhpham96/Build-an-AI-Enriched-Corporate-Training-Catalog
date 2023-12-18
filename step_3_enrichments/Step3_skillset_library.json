@@ -1,0 +1,33 @@
+{
+    "@odata.context": "https://cognitivesearcganhptt6.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DBFE537338A530\"",
+    "name": "azureblob-skillset",
+    "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/content",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/content"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "keyphrases"
+          }
+        ]
+      }
+    ],
+    "cognitiveServices": null,
+    "knowledgeStore": null,
+    "indexProjections": null,
+    "encryptionKey": null
+  }
